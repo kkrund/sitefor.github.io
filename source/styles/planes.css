@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #869e9336;
+    color: #323432;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(35, 40, 38);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #3a3a3a;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* изменяем ширину карточки на 100% */
+    height: 400px; /* автоматическая высота, чтобы подстроиться под содержимое */
+    margin-bottom: 20px; /* добавляем отступ между карточками */
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; /* делаем текстовую часть занимающей половину ширины карточки */
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .card-text {
+        width: 100%; /* на мобильных устройствах текст должен занимать всю ширину карточки */
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.navbar .breadcrumb {
+    margin-left: auto; /* Сдвиг breadcrumb вправо */
+}
+nav[aria-label="breadcrumb"] {
+    background-color: #ffffff8a;
+    padding: 10px 20px; /* Отступы внутри breadcrumb */
+    border-radius: 8px; /* Сглаженные углы */
+    margin: 20px auto; /* Отступы снаружи и центрирование */
+    max-width: 1200px; /* Максимальная ширина для центрирования */
+}
+
+nav[aria-label="breadcrumb"] .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 8px; /* Отступы для разделителя */
+    color: #6c757d;
+}
+
+.breadcrumb {
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+

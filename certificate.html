@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сертификаты и лицензии</title>
+    <link rel="stylesheet" href="source/styles/cstyle.css">
+    <script src="source/styles/jsstyle.js"></script>
+    <link rel="stylesheet" href="source/styles/mystyle.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="source/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="source/images/icon/site.webmanifest">
+    <link rel="mask-icon" href="source/images/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="source/images/icon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="source/images/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body {
+            background: url('https://i.pinimg.com/564x/e5/b0/15/e5b0159cfb39bb66096f02f6293f2993.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 75px;
+            font-size: 1.15rem;
+        }
+        .navbar {
+            background-color: white !important;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .carousel-inner img {
+            margin: auto;
+            max-width: 707px;
+            max-height: 1000px;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(100%);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="source/files/2266913.jpeg" alt="Руссэйр">Руссэйр
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Компания
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aboutcompany.html">О компании "РУССЭЙР"</a></li>
+                                <li><a class="dropdown-item" href="certificate.html">Сертификаты и лицензии</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="park.html">Парк техники</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/footer">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-phone">+7 (812) 324-8101</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Сертификаты и лицензии</h1>
+        <p>Безопасность и качество - основные приоритеты нашей компании. Мы ценим доверие наших клиентов и стремимся к постоянному совершенствованию наших услуг, что подтверждается многочисленными сертификатами и лицензиями.</p>
+        
+        <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselInner = document.querySelector('.carousel-inner');
+            const imagePath = 'source/images/certificates/';
+            const imageCount = 31;
+
+            for (let i = 1; i <= imageCount; i++) {
+                const item = document.createElement('div');
+                item.className = 'carousel-item' + (i === 1 ? ' active' : '');
+                const img = document.createElement('img');
+                img.src = `${imagePath}certificate${i}.jpg`;
+                img.className = 'd-block w-100';
+                img.alt = `Certificate ${i}`;
+                item.appendChild(img);
+                carouselInner.appendChild(item);
+            }
+        });
+    </script>
+</body>
+</html>

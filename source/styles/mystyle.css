@@ -1,0 +1,174 @@
+.nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar-nav .nav-link.active {
+    color: rgb(172, 24, 24);
+}
+.navbar-brand img {
+    width: 80px;
+    height: 50px;
+}
+
+.dropdown-item{
+    background-color: rgb(255, 255, 255);
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: rgb(255, 255, 255);
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+}
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+  color: var(--bs-dropdown-link-disabled-color);
+  pointer-events: none;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Увеличение отступов по бокам */
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Стили для карточек */
+.card-item {
+    margin-bottom: 20px; /* Отступ между карточками */
+}
+
+/* Изменение цвета фона для нечетных карточек */
+.card-item:nth-of-type(odd) {
+    background-color: #bdbbbb2a; /* Цвет фона для нечетных карточек */
+}
+.card-item:nth-of-type(even) {
+    background-color: #a4b8f056; /* Цвет фона для нечетных карточек */
+}
+/* Стили для адаптивного отображения */
+@media (max-width: 767px) {
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-body {
+        text-align: center;
+    }
+    .card-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* Стили для заголовка */
+.full-width-header {
+    background-color: white; /* Фон для заголовка */
+    width: 100vw; /* Ширина заголовка на весь экран */
+    margin-left: calc(-50vw + 50%); /* Центровка заголовка */
+    padding: 10px 0; /* Отступы сверху и снизу для заголовка */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+
+/* Стили для контейнера вокруг блока о компании */
+.about-company-container {
+    background: linear-gradient(to bottom, #203f5a, #ffffff); /* Градиент из светло-серо-голубого в белый */
+    padding: 50px 0;
+}
+
+/* Стили для текстового блока о компании */
+.about-company {
+    margin: 50px auto;
+    max-width: 90%;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.about-company h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
+  .about-company p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* h5{
+    color: black;
+    font-weight: bold;
+    font-size: ;
+} */
+.carousel-caption h5 {
+    font-size: 130%; /* Увеличение шрифта на 20% */
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 130%; /* Увеличение шрифта на 20% */
+    color: black;
+}
+
+
+
+
+
+
+.form-section {
+    max-width: 600px;
+    margin-right: 120px;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    font-weight: bold;
+}
+  
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.form-group textarea {
+    resize: vertical; /* Разрешаем вертикальное изменение размера textarea */
+}
+  
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+
+  

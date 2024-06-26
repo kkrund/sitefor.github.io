@@ -1,0 +1,23 @@
+body {
+    background-size: cover;
+    padding-top: 56px;
+    font-size: 17px;
+    
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.carousel-inner img {
+    margin: auto;
+}

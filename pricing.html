@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авиционные услуги</title>
+    <style>
+        .card-img {
+            max-width: 100%;
+            height: 370px;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 1rem;
+        }
+        .btn-primary {
+            align-self: start;
+        }
+        .card-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1; /* Изменить цвет фона при наведении */
+        }
+    </style>
+    <link rel="stylesheet" href="source/styles/cstyle.css">
+    <script src="source/styles/jsstyle.js"></script>
+    <link rel="stylesheet" href="source/styles/mystyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="source/images/icon/site.webmanifest">
+    <link rel="mask-icon" href="source/images/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="source/images/icon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="source/images/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="source/files/2266913.jpeg" alt="Руссэйр">Руссэйр</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link "  href="/">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Компания
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aboutcompany.html">О компании "РУССЭЙР"</a></li>
+                                <li><a class="dropdown-item" href="certificate.html">Сертификаты и лицензии</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pricing.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="park.html">Парк техники</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#footer">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-phone">+7 (812) 324-8101</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="full-width-header">
+        <h2 class="text-center">АВИАЦИОННЫЕ УСЛУГИ</h2>
+    </div>
+
+<section class="card-item">
+    <div class="container-fluid">
+        <div class="row align-items-center my-4">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="card-body">
+                    <h5 class="card-title">ПРОДАЖА И ПОКУПКА ВОЗДУШНЫХ СУДОВ</h5>
+                    <p class="card-text">Мы предлагаем новые воздушные суда от производителя, а также покупку и продажу воздушных судов с налетом часов. Наши квалифицированные специалисты предоставят консультации и сопровождение на всех этапах покупки.
+                    </p>
+                    <a href="pricing1_sale.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="source/files/verrt-21.jpg" class="card-img" alt="Вертолет">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-item">
+    <div class="container-fluid">
+        <div class="row align-items-center my-4">
+            <div class="col-md-6 order-1 order-md-1">
+                <img src="source/images/pict/helicopters/airbus-ach160-exclusive.jpg" class="card-img" alt="Вертолет">
+            </div>
+            <div class="col-md-6 order-2 order-md-2">
+                <div class="card-body">
+                    <h5 class="card-title">КОММЕРЧЕСКАЯ ЭКСПЛУАТАЦИЯ ВОЗДУШНЫХ СУДОВ</h5>
+                    <p class="card-text">Мы предоставляем клиентам и владельцам ВС статус коммерческой авиакомпании, что позволяет осуществлять перевозку пассажиров и организацию чартерных рейсов на возмездной основе.
+                    </p>
+                    <a href="pricing2_commer.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-item">
+    <div class="container-fluid">
+        <div class="row align-items-center my-4">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="card-body">
+                    <h5 class="card-title">ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И ПОДДЕРЖКА</h5>
+                    <p class="card-text">Мы предлагаем техническое обслуживание воздушных судов в сервисном центре компании на территории аэропорта Пулково, организуем поставку запасных частей и предоставляем сертифицированных специалистов для проведения технического аудита.
+                    </p>
+                    <a href="pricing3_to.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="source/images/pict/helicopters/748d78acc4221ec7319dcfacb4adacbe.jpg" class="card-img" alt="Вертолет">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-item">
+    <div class="container-fluid">
+        <div class="row align-items-center my-4">
+            <div class="col-md-6 order-1 order-md-1">
+                <img src="source/images/pict/helicopters/1102c23d5354f482808cf597a6ef61e5.jpg" class="card-img" alt="Вертолет">
+            </div>
+            <div class="col-md-6 order-2 order-md-2">
+                <div class="card-body">
+                    <h5 class="card-title">ОБУЧЕНИЕ И ПОДГОТОВКА ПЕРСОНАЛА</h5>
+                    <p class="card-text">Мы организуем обучение лётно-технического персонала при покупке воздушных судов, включая тренажерную подготовку (категория D).
+                    </p>
+                    <a href="pricing4_learning.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-item">
+    <div class="container-fluid">
+        <div class="row align-items-center my-4">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="card-body">
+                    <h5 class="card-title">ЛОГИСТИКА И ИНФРАСТРУКТУРА</h5>
+                    <p class="card-text">Мы организуем хранение вертолетов, включая буксировку, и базирование воздушных судов в аэропорту Пулково и на оборудованной теплым ангаром площадке в Ленинградской области.
+                    </p>
+                    <a href="pricing5_logistics.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="source/images/pict/helicopters/335ea22c6e634e85ddd83d06f7a1e103.jpg" class="card-img" alt="Вертолет">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-item">
+    <div class="container-fluid">
+        <div class="row align-items-center my-4">
+            <div class="col-md-6 order-1 order-md-1">
+                <img src="source/images/pict/helicopters/b456eee717db118ee2435feca6ba308c.jpg" class="card-img" alt="Вертолет">
+            </div>
+            <div class="col-md-6 order-2 order-md-2">
+                <div class="card-body">
+                    <h5 class="card-title">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h5>
+                    <p class="card-text">Мы предоставляем VIP-зал в аэропорту Пулково, вертолетную площадку в Ленинградской области и трансферные услуги.
+                    </p>
+                    <a href="pricing6_addserv.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+</footer>
+</body>
+</html>

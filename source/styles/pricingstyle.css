@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f5f5f5; /* Фон всей страницы */
+}
+
+header {
+    background-color: #fff; /* Фон панели навигации */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для панели навигации */
+}
+
+.navbar .breadcrumb {
+    margin-left: auto; /* Сдвиг breadcrumb вправо */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Центрирование содержимого */
+    align-items: flex-start;
+    background-color: #fff; /* Фон контейнера */
+    padding: 20px;
+    border-radius: 8px; /* Сглаженные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    margin: 20px auto; /* Отступы вокруг контейнера и центрирование */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+}
+
+.text-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #faf5eb; /* Светлобежевый фон */
+    border-radius: 8px; /* Сглаженные углы для текстового блока */
+    margin-right: 20px; /* Отступ справа между текстом и изображением */
+}
+
+.image-section {
+    flex: 1;
+    width: 50%; /* Ширина изображения */
+    max-height: 50%; /* Увеличенная максимальная высота изображения */
+    border-radius: 8px; /* Сглаженные углы для изображения */
+    overflow: hidden; /* Обрезка изображения по границам блока */
+    margin-top: 0px; /* Сдвиг изображения вниз */
+}
+
+.fixed-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+nav[aria-label="breadcrumb"] {
+    background-color: #fff;
+    padding: 10px 20px; /* Отступы внутри breadcrumb */
+    border-radius: 8px; /* Сглаженные углы */
+    margin: 20px auto; /* Отступы снаружи и центрирование */
+    max-width: 1200px; /* Максимальная ширина для центрирования */
+}
+
+nav[aria-label="breadcrumb"] .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 8px; /* Отступы для разделителя */
+    color: #6c757d;
+}
+
+.breadcrumb {
+    margin: 0; /* Убираем внешние отступы */
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 0 20px; /* Отступы сверху и снизу */
+    }
+    .text-section {
+        padding: 20px;
+        margin-right: 0; /* Убираем отступ справа */
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+    }
+    .image-section {
+        width: 100%;
+        height: 50vh; /* Высота изображения на мобильных устройствах */
+        margin-top: 20px; /* Отступ сверху для изображения на мобильных */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-section {
+        height: auto;
+        max-height: 300px;
+    }
+    .fixed-image {
+        height: 100%;
+    }
+}
