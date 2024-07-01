@@ -94,7 +94,7 @@ h1 {
     .card-title {
         font-size: 1.5rem;
         padding: 10px 20px;
-        bottom: 10px; /* Пониже для мобильных устройств */
-        width: 90%; /* Обеспечивает, что текст вписывается */
+        bottom: 10px; 
+        width: 90%; 
     }
 }
